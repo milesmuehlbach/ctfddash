@@ -1,0 +1,3 @@
+CTF_NAME = "IHMS CTF"
+CTF_URL = "https://ihmsctf.milesmuehlbach.com"
+SECRET = "superscooper"
