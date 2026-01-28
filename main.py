@@ -30,6 +30,7 @@ def solve():
 
     if data.get("secret") == secret:
         message = data.get("message", "")
+        print(data.get("solve_number", ""))
         # Emit to all connected clients
         socketio.emit("solve", message)
         return jsonify({"success": True, "message": message}), 200
@@ -38,4 +39,4 @@ def solve():
 
 
 if __name__ == "__main__":
-    socketio.run(app, debug=True, allow_unsafe_werkzeug=True)
+    socketio.run(app, host="0.0.0.0", debug=True, allow_unsafe_werkzeug=True)

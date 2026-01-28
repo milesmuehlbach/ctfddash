@@ -1,0 +1,2 @@
+SECRET="superscooper"
+DASH_URL="http://192.168.86.246:5000/api/solve"

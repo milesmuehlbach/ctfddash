@@ -1,0 +1,1 @@
+from .ctfddash import load
